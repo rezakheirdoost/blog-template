@@ -1,0 +1,89 @@
+
+:root{
+    --back-white : #fff;
+    --back-body-light : #f3f4f6; 
+    --back-gray : #eceeef;
+    --first-back-color : #FFC60B;
+    --secound-back-color : #FF8B00; 
+    --text-color : #444444 ;
+    --text-color-white : #fafafa;
+}
+
+@font-face {
+    font-family: yekanBakhRegular;
+    src: url(../fonts/YekanBakh-Regular.ttf) format("truetype"), url(../fonts/YekanBakh-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/YekanBakh-Regular.woff) format("woff"), url(../fonts/YekanBakh-Regular.woff2) format("woff2");
+}
+@font-face {
+    font-family: yekanBakhBold;
+    src: url(../fonts/YekanBakh-Bold.ttf) format("truetype"), url(../fonts/YekanBakh-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/YekanBakh-Bold.woff) format("woff"), url(../fonts/YekanBakh-Bold.woff2) format("woff2");
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+body{
+    background: var(--back-body-light);
+}
+h1 , h2 , h3 , h4 , h5 , h6{
+    font-family: yekanBakhBold;
+}
+
+p , span , input , textarea , button , a{
+    font-family: yekanBakhRegular;
+}
+
+.back-white{
+    background: var(--back-white);
+}
+.back-gray{
+    background: #d1d5dd;
+}
+
+.radius{
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+input[type=text]{
+    background: var(--back-gray);
+    padding: 8px;
+    outline: none;
+    border: none;
+}
+
+.box-shadow{
+    box-shadow: #e0e0e063 0px 0px 10px;
+}
+
+.btn-account{
+    text-decoration: none;
+    background: var(--secound-back-color);
+    color: var(--text-color-white);
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+}
+
+.btn-account:hover{
+    text-decoration: none;
+    color: var(--text-color-white);
+    opacity: .9;
+}
+
+.radius-bottom{
+    border-radius: 0px 0px 20px 20px;
+}
